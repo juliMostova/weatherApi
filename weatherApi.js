@@ -60,8 +60,8 @@ searchButton.addEventListener("click", () => {
        humidity.innerHTML = `${data.main.humidity}%`;
        wind.innerHTML = `${data.wind.speed} Km/h`;
 
-      weatherBox.style.display = "";
-      weatherDitails.style.display = "";
+      // weatherBox.style.display = "";
+      // weatherDitails.style.display = "";
       container.style.height = "550px";
       weatherBox.classList.add("fadeIn");
       weatherDitails.classList.add("fadeIn");
