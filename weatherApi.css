@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background:#1d3b4e;
+   height: 100vh;
+}
+.container{
+    position: relative;
+    padding: 28px 32px;
+    background-color: #fff;
+    background-image: url('img/milky-way.jpg');
+    width: 400px;
+    height: 105px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out; 
+}
+
+
+.btnClear{
+    position: absolute;
+    top:5px;
+    right: 4px;
+    border-radius: 50%;
+}
+.btnClear:hover{
+    background-color: rgb(255, 217, 0);
+}
+.search-box{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   height: min-content;
+   align-items: center;
+}
+
+.search-box input{
+    color: #06283D;
+    font-size: 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    padding-left: 32px;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+.search-box i{
+    position: absolute;
+    color: #f30808;
+    font-size: 28px;
+}
+
+.search-box button{
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #06283D;
+    background: #dff6ff;
+}
+
+.search-box button:hover{
+    color: #097ec7;
+    background: #18415c;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    color: #b1e3e3;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color:#024747;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-ditails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.weather-ditails .humidity, .weather-ditails .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.weather-ditails .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-ditails .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.weather-ditails i{
+    color:#024747;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weather-ditails span{
+    color:#024747;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-ditails p{
+    color:#024747;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color:#024747;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.weather-box, .weather-ditails{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+} 
+
